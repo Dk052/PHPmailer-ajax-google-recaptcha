@@ -10,12 +10,12 @@ Send Mail with PHPMailer + google SMTP + google recaptcha + AJAX
 4.) Configure mail.php on Line 77 put your SECRET KEY from Google reCaptcha.
 
 5.) Edit mail.php     
-//Server settings for SMTP
-    $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'yourgmailaccount';                     // SMTP username
-    $mail->Password   = 'yourpassword';                         // SMTP password
-    $mail->SMTPSecure = 'ssl';                                  // TLS OR SSL
+//Server settings for SMTP<br>
+    $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through<br>
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication<br>
+    $mail->Username   = 'yourgmailaccount';                     // SMTP username<br>
+    $mail->Password   = 'yourpassword';                         // SMTP password<br>
+    $mail->SMTPSecure = 'ssl';                                  // TLS OR SSL<br>
     $mail->Port       = 465;  
 
 6.) Also make sure you have activated Less Secure Apps on your Google Account (https://myaccount.google.com/lesssecureapps)
