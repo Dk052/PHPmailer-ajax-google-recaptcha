@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Load css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+
+    <!-- Load google recaptcha api -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- form element -->
+
+    <div class="container">
+        <div class="row px-6 px-xl-2">
+            <div class="col-lg-12">
+                <div id="contact-form"></div>
+                <form id="contactform" method="post" action="mail.php">
+                    <div class="ajax-form">
+                        <div class="col-md-6">
+                            <input name="name" type="text" class="form-control" placeholder="Your Name: *"
+                                autocomplete="off" required />
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <input name="email" type="email" class="form-control" placeholder="Email *"
+                                autocomplete="off" required />
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <textarea name="message" class="form-control" rows="3" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="col-md-12 mt-4">
+
+
+                            <!-- INSERT HERE YOUR GOOGLE RECAPTCHA SITEKEY -->
+                            <div class="g-recaptcha" data-sitekey='6Lfav8sZAAAAAKsu9hQUHVjTpuMvr38aUr4AoKka'></div>
+
+                            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <input name="reset" button type="reset" class="btn btn-danger" value="Reset"></button>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+ <!-- Load js -->
+ <script src="./assets/js/jquery.min.js"></script>
+ <script src="./assets/js/main.js"></script>
+ <script src="./assets/js/bootstrap.min.js"></script>
+ <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
